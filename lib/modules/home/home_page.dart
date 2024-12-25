@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../utils/reusableWidgets/reusable_app_bar.dart';
+import '../painter/painter_list_page.dart';
 import 'controller/home_controller.dart';
 
 class HomePage extends GetView<HomeController> {
@@ -38,14 +39,7 @@ class HomePage extends GetView<HomeController> {
           // ),
         ],
       ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-       
-          ],
-        ),
-      ),
+      body: PainterListPage()
     );
   }
 }
